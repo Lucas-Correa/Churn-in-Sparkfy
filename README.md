@@ -21,8 +21,34 @@ This Git has a jupyter noteook containing:
 
 ## 3. Regarding the Data
 
-## 4. Regarding the Model
+Each user log row is compused by:
+- artist: artist name
+- auth: 
+- firstName: first name of the user
+- gender: user gender
+- itemInSession: the sequencial number of that item in the session
+- lastName: user last name
+- length: music duration 
+- level: the account level, free or paid
+- location: location where the session is been stremed
+- method: the action in that user log register (put or get) 
+- page: page of the log
+- registration: number of user registration 
+- sessionId: session unique key
+- song: name of the song
+- status: code for the sataus of the page
+- ts: timestamp of the log 
+- userAgent: browser used by the user to acess that session 
+- userId: user unique key
 
+## 4. Regarding the Model
+The final model considered 6 features: 
+- AvgSongsPlayes: Avarage songs played by each user. It is expected that user that cancel their account play more 
+- SongVariety
+- LikedSongsProportion
+- FriedsAdded
+- DaysInPremium
+- SessionsLast30days
 ## 5. Results and evaluation metrics
 
 ## 6. License
