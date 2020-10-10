@@ -42,13 +42,29 @@ Each user log row is compused by:
 - userId: user unique key
 
 ## 4. Regarding the Model
+
+The model was built to classify each user in two possible categories, one for users who are likely to churn and the users more likely to stay in the sparkfy plataform. The idea of the model is to learn from the features of already cancelled users so it can tag users that are with similar characteristics but still remains in the plataform. This assumes users take the same steps before cancelle their account.
+
 The final model considered 6 features: 
-- AvgSongsPlayes: Avarage songs played by each user. It is expected that user that cancel their account play more 
-- SongVariety
-- LikedSongsProportion
-- FriedsAdded
-- DaysInPremium
-- SessionsLast30days
+
+- AvgSongsPlayes: Avarage songs played by each user. It is expected that users who canceled their account have less engagement in the plataform, therefore less 
+                  played songs
+                  
+- SongVariety: Different songs listend by the user. Users that explore different songs tend to have a better utilization of the plataform, therefore tend to keep                it
+
+- LikedSongsProportion: The ratio of desliked songs for liked songs by each user id. If the user deslike the songs of the plataform, it is expected him to leave
+
+- FriedsAdded: How many times a user pressed the Add Friend Button. Users that engage more with others tend to stay longer in the plataform
+
+- DaysInPremium: How many days a user is with the premium account. This features was created to control landmarks in users account life. Probably users behave in                  differente manners according to how much time they are in the premium account.
+
+- SessionsLast30days: How many sessions a user had in the last 30 days. It is expected that users reduce the number of sessions before they cancelled.
+
+The initial classifer used was Logistic Regression, but, because the data was imbalanced for the number of cancelled and active users, the classifer was tagging all the users as active users and still getting a good accuracy score. To surpass this problem, I have changed the classifer to a Gradient-Boosted Tree so the model starts to be penalize for incorrect labels on every interaction. 
+
 ## 5. Results and evaluation metrics
 
+The Metrics choosed to evaluate the model where the accuracy, recall, precision and f1-score.
+
 ## 6. License
+
