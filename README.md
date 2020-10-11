@@ -5,9 +5,9 @@ This project uses spark to create a machine learning algorithm that predict the 
 
 In sparkfy there are paid level users (premium account) and free tier level users. In the paid level, a user can stream music without advertisements between songs. The main goal here is to predict the premium accounts more likely to cancelled it's subscription.
 
-The available data base is composed by the user log action whitin the stream plataform. Actions like play next song, like or deslike a song, add friends are organized among sessions Id's in sequencia timestamps. 
+The available data base is composed by the user log action whitin the stream platform. Actions like play next song, like or deslike a song, add friends are organized among sessions Id's in sequencia timestamps. 
 
-The full dataset size is 12GB which require the use of big data frames in a cloud computing service like pyspark and Amazon Web Service, which were the ones used.
+The full dataset size is 12GB which require the use of big data work frames like Spark in a cloud computing service like Amazon Web Service, which were the ones I used.
 
 ## 2. How to Start 
 This Git has a jupyter noteook containing:
@@ -20,6 +20,8 @@ This Git has a jupyter noteook containing:
  The notebook already consider the dataset web path of the full 12gb, so I recommend that you run it in distribuited system of computers. 
 
 ## 3. Regarding the Data
+
+As mentioned, the dataset is 12 GB size containing X user log rows. In total we will analyse 22,278 users in the plataform between D1 and D2
 
 Each user log row is compused by:
 - artist: artist name
@@ -40,6 +42,8 @@ Each user log row is compused by:
 - ts: timestamp of the log 
 - userAgent: browser used by the user to acess that session 
 - userId: user unique key
+
+The number of cancelled users is  5003 which stands for 22.45% of the users, while active users sum up 17275 unique ids which stands for  77,54% of the total amount of users.
 
 ## 4. Regarding the Model
 
