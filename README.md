@@ -70,7 +70,7 @@ The initial classifer used was Logistic Regression, but, because the data was im
 
 ## 5. Results and evaluation metrics
 
-The Metrics choosed to evaluate the model where the accuracy, recall, precision and f1-score.
+The Metrics choosed to evaluate the model where the accuracy, recall, precision and f1-score and are discussed in [this post](https://lukec-correa.medium.com/predicting-churn-with-user-log-data-from-a-digital-music-streaming-app-7c30d7206daf)
 
 ## 6. License
 
