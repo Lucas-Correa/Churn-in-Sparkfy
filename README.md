@@ -1,5 +1,6 @@
 # Churn-in-Sparkfy
 
+
 ## 1. About
 This project uses spark to create a machine learning algorithm that predict the churn of users in a digital music stream company called Sparkfy. 
 
@@ -72,5 +73,6 @@ The initial classifer used was Logistic Regression, but, because the data was im
 
 The Metrics choosed to evaluate the model where the accuracy, recall, precision and f1-score and are discussed in [this post](https://lukec-correa.medium.com/predicting-churn-with-user-log-data-from-a-digital-music-streaming-app-7c30d7206daf)
 
-## 6. License
+## 6. Acknowledgments
 
+The database for this project was provide by Udacity in its nanodegree of Data Scientist. I am the only contributor to this code and received feedbacks from the Udacty reviewers who helped me improved my work.
